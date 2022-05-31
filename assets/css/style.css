@@ -1,0 +1,491 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+input[type=text], input[type=password] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+a {
+  color: #202020;
+  transition: 0.4s;
+}
+a:hover {
+  color: #FF3D00;
+  transition: 0.4s;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 15px 20px 25px 20px;
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+}
+
+input[type=text], input[type=password], .select {
+  width: 100%;
+  margin-left: -11px;
+  border: 1px solid #E3E3E3;
+  border-radius: 6px;
+  padding: 7px 11px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 10px;
+}
+
+input[type=text]:placeholder-shown, input[type=password]:placeholder-shown, .select {
+  color: #808080;
+}
+
+.select {
+  cursor: pointer;
+}
+.select.active {
+  color: #202020;
+}
+
+.form-container {
+  margin: 0 11px;
+}
+
+.btn {
+  width: 100%;
+  border: 1px solid #FF3D00;
+  border-radius: 5px;
+  color: #FF3D00;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.btn:hover {
+  width: 100%;
+  border: 1px solid #FF3D00;
+  border-radius: 5px;
+  color: #FF3D00;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #FF3D00;
+  color: white;
+}
+.btn.second {
+  width: 100%;
+  border: 1px solid #0085FF;
+  border-radius: 5px;
+  color: #0085FF;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.btn.second:hover {
+  width: 100%;
+  border: 1px solid #0085FF;
+  border-radius: 5px;
+  color: #0085FF;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #0085FF;
+  color: white;
+}
+.btn.reverse {
+  width: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.btn.reverse:hover {
+  width: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  text-align: center;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: white;
+  color: #0085FF;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+
+h4 {
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+}
+p.context {
+  font-size: 10px;
+  color: #6A6A6A;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+.cover img {
+  object-fit: cover;
+  border-radius: 12px;
+}
+.cover img, .cover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.cover.rectangle {
+  position: relative;
+  width: 100%;
+  padding-top: 64.4567219153%;
+}
+
+body {
+  background-color: #F7F7F7;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+svg {
+  fill: #202020;
+  transition: 0.4s;
+}
+svg:hover {
+  fill: #FF3D00;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+.card-content {
+  padding: 10px;
+}
+
+.page, .reg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  padding: 36px 0;
+  position: relative;
+}
+header .burger-menu {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .burger-menu .line {
+  height: 1px;
+  width: 18px;
+  background-color: #202020;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+header .burger-menu .line:last-child {
+  margin-bottom: 0;
+}
+header .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+header .logo.active {
+  color: #ef5ad8;
+}
+header .logo h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+header .logo h1:hover {
+  color: #ef5ad8;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav a {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav a.active svg {
+  fill: #FF3D00;
+}
+header nav a:first-child {
+  margin-right: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container {
+  width: 49%;
+  background-color: #0085FF;
+  border-radius: 8px;
+}
+.main img {
+  border-radius: 8px;
+}
+.main .cover-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main h1 {
+  color: #ffffff;
+  margin: 36px 40px;
+}
+.main h1:first-child {
+  margin-bottom: 0;
+}
+
+.cards .card {
+  width: 18.4%;
+}
+.cards .card .cover img {
+  border-radius: 8px 8px 0px 0px;
+}
+.cards h2 {
+  margin-bottom: 15px;
+}
+.cards p {
+  margin-bottom: 8px;
+}
+
+.main-form {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.main-form h1 {
+  margin-bottom: 26px;
+  text-align: center;
+}
+.main-form input {
+  margin-bottom: 13px;
+}
+.main-form .select {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+.main-form .select:hover .pick svg {
+  fill: #FF3D00;
+}
+.main-form .select .pick {
+  height: 100%;
+}
+
+footer {
+  margin: 0;
+  background-color: #202020;
+  padding: 40px 10px;
+}
+footer .container {
+  align-items: center;
+}
+footer .container h2, footer .container p {
+  color: #ffffff;
+}
+
+.profile {
+  background-color: #0085FF;
+  border-radius: 8px;
+  padding: 33px;
+  color: #ffffff;
+}
+.profile-container {
+  width: 49%;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-container:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile-container .box:first-child {
+  width: 50%;
+}
+.profile-container .box:last-child {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile-container .title {
+  margin-bottom: 20px;
+}
+.profile-container .title h2 {
+  margin-bottom: 4px;
+}
+
+.progress h1 {
+  margin-bottom: 25px;
+}
+.progress .checkpoint {
+  width: 9%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.progress p {
+  text-align: center;
+}
+.progress svg, .progress h4 {
+  margin-bottom: 8px;
+}
+
+.page form {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page form .form-container {
+  width: 95%;
+}
+.page form h1 {
+  margin-bottom: 26px;
+  text-align: center;
+}
+.page form input {
+  margin-bottom: 13px;
+}
+.page form input:last-child {
+  margin-bottom: 20px;
+}
+.page form .btn {
+  margin-bottom: 46px;
+}
+.page form p {
+  margin-bottom: 13px;
+  text-align: center;
+}
+.page.reg .btn {
+  margin-bottom: 0px;
+}
+
+/*# sourceMappingURL=style.css.map */

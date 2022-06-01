@@ -26,3 +26,15 @@
     width: 100%;
     padding-top: $height;
 }
+@mixin backIMG($source){
+    background: $source 100% 100% no-repeat;
+    background-size: cover;
+    background-color: $black;
+    transition: 1s;
+    cursor: pointer;
+
+    &:hover{
+        background: $main;
+        transition: 1s;
+    }
+}

@@ -4,6 +4,8 @@
 @import 'mixin';
 
 a{
+    @include font(700);
+    font-size: 14px;
     color: $black;
     transition: 0.4s;
 
@@ -110,6 +112,7 @@ section{
         left: 0;
         width: 100%;
         height: 100%;
+        object-fit: contain;
     }
     &.rectangle{
         @include cover(calc(350 / (543 / 100)) * 1% );
@@ -154,14 +157,10 @@ svg{
     align-items: center;
 }
 
-@import 'sections/main/header';
-@import 'sections/main/main';
-@import 'sections/main/cards';
-@import 'sections/main/main-form';
+@import 'sections/header';
+@import 'sections/main';
+@import 'sections/category';
+@import 'sections/cards';
+@import 'sections/orders';
+@import 'sections/footer';
 
-@import 'sections/footer/footer';
-
-@import 'sections/profile/profile';
-@import 'sections/profile/progress';
-
-@import 'sections/auth/auth';

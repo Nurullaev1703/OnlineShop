@@ -4,6 +4,8 @@
 @import 'mixin';
 
 a{
+    @include font(700);
+    font-size: 14px;
     color: $black;
     transition: 0.4s;
 
@@ -22,8 +24,7 @@ form{
 input[type="text"], input[type="password"], .select{
     width: 100%;
     margin-left: -11px;
-    border: 1px solid $stroke;
-    border-radius: 6px;
+    border: 1px solid $placeholder;
     padding: 7px 11px;
     @include font(700);
     font-size: 10px;
@@ -77,21 +78,20 @@ p{
     font-size: 12px;
 
     &.context{
-        font-size: 10px;
-        color: $gray;
+      color: $gray;
     }
 }
 h1{
-    font-size: 20px;
+    font-size: 30px;
 }
 h2{
-    font-size: 16px;
+    font-size: 24px;
 }
 h3{
-    font-size: 14px;
+    font-size: 20px;
 }
 h4{
-    font-size: 12px;
+    font-size: 18px;
 }
 section{
     margin-bottom: 80px;
@@ -110,6 +110,7 @@ section{
         left: 0;
         width: 100%;
         height: 100%;
+        object-fit: contain;
     }
     &.rectangle{
         @include cover(calc(350 / (543 / 100)) * 1% );
@@ -154,14 +155,11 @@ svg{
     align-items: center;
 }
 
-@import 'sections/main/header';
-@import 'sections/main/main';
-@import 'sections/main/cards';
-@import 'sections/main/main-form';
+@import 'sections/header';
+@import 'logo';
+@import 'sections/main';
+@import 'sections/category';
+@import 'sections/cards';
+@import 'sections/orders';
+@import 'sections/footer';
 
-@import 'sections/footer/footer';
-
-@import 'sections/profile/profile';
-@import 'sections/profile/progress';
-
-@import 'sections/auth/auth';

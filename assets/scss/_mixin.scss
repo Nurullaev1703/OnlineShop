@@ -3,8 +3,8 @@
     border: 1px solid $color;
     border-radius: 5px;
     color: $color;
-    padding: 10px 0;
-    font-size: 14px;
+    padding: 8px 0;
+    font-size: 12px;
     @include font(900);
     text-align: center;
     transition: 0.4s;
@@ -25,4 +25,16 @@
     position: relative;
     width: 100%;
     padding-top: $height;
+}
+@mixin backIMG($source){
+    background: $source 100% 100% no-repeat;
+    background-size: cover;
+    background-color: $black;
+    transition: 1s;
+    cursor: pointer;
+
+    &:hover{
+        background: $main;
+        transition: 1s;
+    }
 }

@@ -74,8 +74,7 @@ form {
 input[type=text], input[type=password], .select {
   width: 100%;
   margin-left: -11px;
-  border: 1px solid #E3E3E3;
-  border-radius: 6px;
+  border: 1px solid #808080;
   padding: 7px 11px;
   font-family: "Montserrat";
   font-weight: 700;
@@ -102,8 +101,8 @@ input[type=text]:placeholder-shown, input[type=password]:placeholder-shown, .sel
   border: 1px solid #FF3D00;
   border-radius: 5px;
   color: #FF3D00;
-  padding: 10px 0;
-  font-size: 14px;
+  padding: 8px 0;
+  font-size: 12px;
   font-family: "Montserrat";
   font-weight: 900;
   text-align: center;
@@ -115,8 +114,8 @@ input[type=text]:placeholder-shown, input[type=password]:placeholder-shown, .sel
   border: 1px solid #FF3D00;
   border-radius: 5px;
   color: #FF3D00;
-  padding: 10px 0;
-  font-size: 14px;
+  padding: 8px 0;
+  font-size: 12px;
   font-family: "Montserrat";
   font-weight: 900;
   text-align: center;
@@ -130,8 +129,8 @@ input[type=text]:placeholder-shown, input[type=password]:placeholder-shown, .sel
   border: 1px solid #0085FF;
   border-radius: 5px;
   color: #0085FF;
-  padding: 10px 0;
-  font-size: 14px;
+  padding: 8px 0;
+  font-size: 12px;
   font-family: "Montserrat";
   font-weight: 900;
   text-align: center;
@@ -143,8 +142,8 @@ input[type=text]:placeholder-shown, input[type=password]:placeholder-shown, .sel
   border: 1px solid #0085FF;
   border-radius: 5px;
   color: #0085FF;
-  padding: 10px 0;
-  font-size: 14px;
+  padding: 8px 0;
+  font-size: 12px;
   font-family: "Montserrat";
   font-weight: 900;
   text-align: center;
@@ -158,8 +157,8 @@ input[type=text]:placeholder-shown, input[type=password]:placeholder-shown, .sel
   border: 1px solid #ffffff;
   border-radius: 5px;
   color: #ffffff;
-  padding: 10px 0;
-  font-size: 14px;
+  padding: 8px 0;
+  font-size: 12px;
   font-family: "Montserrat";
   font-weight: 900;
   text-align: center;
@@ -171,8 +170,8 @@ input[type=text]:placeholder-shown, input[type=password]:placeholder-shown, .sel
   border: 1px solid #ffffff;
   border-radius: 5px;
   color: #ffffff;
-  padding: 10px 0;
-  font-size: 14px;
+  padding: 8px 0;
+  font-size: 12px;
   font-family: "Montserrat";
   font-weight: 900;
   text-align: center;
@@ -199,24 +198,23 @@ p {
   font-size: 12px;
 }
 p.context {
-  font-size: 10px;
   color: #6A6A6A;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 24px;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 h4 {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 section {
@@ -291,39 +289,41 @@ header {
 header .container {
   align-items: center;
 }
-header .logo {
+header .container .navigate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .navigate svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+header .container .navigate svg:first-child {
+  margin: 0px 20px;
+}
+header .container .navigate .nav-links {
+  padding: 10px 0;
+  border-right: 1px solid #E3E3E3;
+}
+header .container .navigate .nav-links a {
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.logo {
   font-family: "Montserrat";
   font-weight: 700;
   text-transform: uppercase;
   display: flex;
   align-items: baseline;
 }
-header .ellipse.active {
+
+.ellipse.active {
   width: 5px;
   height: 5px;
   background-color: #FF3D00;
   border-radius: 100%;
-}
-header .navigate {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .navigate svg {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-}
-header .navigate svg:first-child {
-  margin: 0px 20px;
-}
-header .navigate .nav-links {
-  padding: 10px 0;
-  border-right: 1px solid #E3E3E3;
-}
-header .navigate .nav-links a {
-  text-transform: uppercase;
-  margin-right: 20px;
 }
 
 .main {
@@ -481,12 +481,125 @@ header .navigate .nav-links a {
   background-color: #ffffff;
   border-radius: 100%;
 }
+.cards nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.cards nav a {
+  font-size: 18px;
+  margin-right: 20px;
+}
+.cards nav a:last-child {
+  margin-right: 0;
+}
+.cards h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 .cards h2 {
   margin: 20px 0;
   text-align: center;
 }
 .cards p {
   font-size: 18px;
+  text-align: center;
+}
+.cards .btn {
+  margin: 0 auto;
+  width: 20%;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #E3E3E3;
+  padding-top: 80px;
+}
+footer .container {
+  flex-direction: column;
+}
+footer .container .icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+footer .container .icons.contact, footer .container .icons.pay {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+footer .container .icons p {
+  width: 70%;
+}
+footer .send-box {
+  width: 50%;
+  margin: 0 auto;
+}
+footer .send-box h1, footer .send-box p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+footer .send-box .message {
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  margin-bottom: 50px;
+}
+footer .send-box .message .btn {
+  width: 8%;
+}
+footer .illustrations {
+  margin-bottom: 80px;
+}
+footer .illustrations .container {
+  flex-direction: row;
+}
+footer .illustrations .container .item {
+  width: 20%;
+}
+footer .illustrations .container .item .cover {
+  background: url("../img/category/man.jpg");
+  background-size: cover;
+}
+footer .wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+footer .wrapper .container {
+  width: 30%;
+  justify-content: flex-start;
+}
+footer .wrapper .container .logo, footer .wrapper .container h4 {
+  margin-bottom: 20px;
+}
+footer .wrapper .container svg {
+  margin-right: 20px;
+}
+footer .wrapper .container svg:last-child {
+  margin-right: 0;
+}
+footer .wrapper .container .links-container {
+  display: flex;
+}
+footer .wrapper .container .links-container nav {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+footer .wrapper .container .links-container nav p {
+  margin-bottom: 6px;
+}
+footer .wrapper .container .links-container nav p:last-child {
+  margin-bottom: 0;
+}
+footer .the-end {
+  margin-top: 50px;
+  border-top: 1px solid #6A6A6A;
+  padding: 10px 0;
+}
+footer .the-end p {
   text-align: center;
 }
 

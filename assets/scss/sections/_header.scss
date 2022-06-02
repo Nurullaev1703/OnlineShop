@@ -3,42 +3,28 @@ header{
 
     .container{
         align-items: center;
-    }
-    .logo{
-        @include font(700);
-        text-transform: uppercase;
-        display: flex;
-        align-items: baseline;
-    }
-    .ellipse{
-        &.active{
-            width: 5px;
-            height: 5px;
-            background-color: $main;
-            border-radius: 100%;
-        }
-    }
     .navigate{
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        svg{
-            width: 24px;
-            height: 24px;
-            cursor:pointer;
+            svg{
+                width: 24px;
+                height: 24px;
+                cursor:pointer;
 
-            &:first-child{
-                margin: 0px 20px;
+                &:first-child{
+                    margin: 0px 20px;
+                }
             }
-        }
 
-        .nav-links{
-            padding: 10px 0;
-            border-right: 1px solid $stroke;
-            a{
-                text-transform: uppercase;
-                margin-right: 20px;
+            .nav-links{
+                padding: 10px 0;
+                border-right: 1px solid $stroke;
+                a{
+                    text-transform: uppercase;
+                    margin-right: 20px;
+                }
             }
         }
     }

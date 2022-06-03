@@ -40,7 +40,7 @@ li {
   padding: 0;
 }
 
-.btn {
+.btn, input[type=button] {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -50,6 +50,22 @@ input[type=text], input[type=password] {
   border: none;
   outline: none;
   background-color: transparent;
+}
+
+.blue {
+  background-color: #0085FF;
+}
+
+.pink {
+  background-color: #ef5ad8;
+}
+
+.orange {
+  background-color: #FF3D00;
+}
+
+.black {
+  background-color: #202020;
 }
 
 a {
@@ -498,6 +514,9 @@ header .container .navigate .nav-links a {
   text-align: center;
   margin-bottom: 30px;
 }
+.cards h1.title {
+  text-align: left;
+}
 .cards h2 {
   margin: 20px 0;
   text-align: center;
@@ -601,6 +620,183 @@ footer .the-end {
 }
 footer .the-end p {
   text-align: center;
+}
+
+.product-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FF3D00;
+  padding: 30px 0;
+  text-transform: uppercase;
+}
+.product-title-container {
+  display: flex;
+  margin-top: 10px;
+}
+.product-title-container a:hover {
+  color: #ffffff;
+}
+.product-title-container span {
+  margin: 0 10px;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.product .cover {
+  margin-bottom: 3%;
+  background-color: #E3E3E3;
+}
+.product-container:first-child {
+  width: 40%;
+}
+.product-container:last-child {
+  width: 55%;
+}
+.product-container .detail {
+  width: 31%;
+}
+.product-container h1.price {
+  color: #FF3D00;
+}
+.product-container.info .description {
+  margin: 20px 0;
+}
+.product-container.info .detail {
+  width: 100%;
+  align-items: center;
+}
+.product-container.info .characteristics {
+  width: 48%;
+  display: flex;
+  align-items: center;
+}
+.product-container.info .characteristics h3 {
+  margin-right: 15px;
+}
+.product-container.info .characteristics .size-list-pick {
+  display: flex;
+}
+.product-container.info .characteristics .size-list-pick p {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #E3E3E3;
+  transition: 0.4s;
+}
+.product-container.info .characteristics .size-list-pick p:hover, .product-container.info .characteristics .size-list-pick p.active {
+  transition: 0.4s;
+  color: #202020;
+  border-bottom: 1px solid #202020;
+}
+.product-container.info .characteristics .ellipse-container {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-container.info .characteristics .ellipse-container .ellipse {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.product-container.info .characteristics .ellipse-container .ellipse:hover, .product-container.info .characteristics .ellipse-container .ellipse.pick {
+  transition: 0.2s;
+  width: 10px;
+  height: 10px;
+  border: 5px solid #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+.product-container.info .card {
+  margin-top: 40px;
+  padding: 20px 20px 40px 20px;
+}
+.product-container.info .card-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.product-container.info .card-container .counter {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+}
+.product-container.info .card-container .counter .item {
+  padding: 10px;
+}
+.product-container.info .card-container .counter .item.count {
+  transition: 0.4s;
+  cursor: pointer;
+}
+.product-container.info .card-container .counter .item.count:first-child {
+  border-right: 1px solid #E3E3E3;
+}
+.product-container.info .card-container .counter .item.count:last-child {
+  border-left: 1px solid #E3E3E3;
+}
+.product-container.info .card-container .counter .item.count:hover {
+  background-color: #FF3D00;
+  color: #ffffff;
+  transition: 0.4s;
+}
+.product-container.info .card-container .counter .item.count:hover:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.product-container.info .card-container .counter .item.count:hover:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.product-container.info .card .buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.product-container.info .card .buttons-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.product-container.info .card .buttons-container .button-box {
+  width: 48%;
+}
+.product-container.info .card .buttons-container .button-box .btn {
+  border: 1px solid #FF3D00;
+  padding: 10px 0;
+}
+
+.descriptions {
+  padding: 40px 0;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+}
+.descriptions .descriptions-container {
+  width: 65%;
+  margin: 0 auto;
+}
+.descriptions .descriptions-container .container {
+  width: 50%;
+  margin: 0 auto;
+}
+.descriptions .descriptions-container .container .tab {
+  transition: 0.4s;
+}
+.descriptions .descriptions-container .container .tab:hover, .descriptions .descriptions-container .container .tab.active {
+  color: #FF3D00;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.descriptions .descriptions-container .content .tab-content {
+  display: none;
+  text-align: center;
+}
+.descriptions .descriptions-container .content .tab-content.active {
+  margin-top: 20px;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
